@@ -4,9 +4,12 @@ sudo rm /etc/init.d/camtopleft
 sudo rm /etc/init.d/camtopright
 sudo rm /etc/init.d/cambottomleft
 sudo rm /etc/init.d/cambottomright
+echo "Creating folders"
 mkdir /usr/share/picam
+mkdir /usr/share/picam/init.d
 echo "Copying new files"
-sudo cp -R .* /usr/share/picam
+sudo cp ./* /usr/share/picam
+sudo cp ./init.d/* /usr/share/picam.init.d
 echo "symlinking services"
 sudo ln -s /usr/share/picam/init.d/camtopleft /etc/init.d/camtopleft
 sudo ln -s /usr/share/picam/init.d/camtopright /etc/init.d/camtopright
