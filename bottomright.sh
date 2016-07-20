@@ -2,7 +2,7 @@
 ##Assign location of this script to variable
 ##Used to restart script after connection is lost
 position=bottomright
-Script=/home/pi/PiCamMatrix/$position.sh
+Script=/usr/share/picam/$position.sh
 pid_file=/var/run/cambottomright.omx.pid
 screen -dmS $position sh -c "omxplayer --win '960 540 1920 1080' --audio_queue=10  --video_queue=40 --live $(cat /home/pi/PiCamMatrix/cams.txt | grep -o '/etc/picam.settings.*' | cut -f2- -d'=')"
 

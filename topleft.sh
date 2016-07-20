@@ -2,7 +2,7 @@
 ##Assign location of this script to variable
 ##Used to restart script after connection is lost
 position=topleft
-Script=/home/pi/PiCamMatrix/$position.sh
+Script=/usr/share/picam/$position.sh
 pid_file=/var/run/camtopleft.omx.pid
 sleep 5
 screen -dmS $position sh -c "omxplayer --win '230 37 1014 599' --audio_queue=10  --video_queue=40 --live $(cat /etc/picam.settings | grep -o 'topleft.*' | cut -f2- -d'=')"
