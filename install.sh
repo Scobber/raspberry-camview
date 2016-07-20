@@ -16,7 +16,7 @@ sudo ln -s /usr/share/picam/init.d/camtopright /etc/init.d/camtopright
 sudo ln -s /usr/share/picam/init.d/cambottomleft /etc/init.d/cambottomleft
 sudo ln -s /usr/share/picam/init.d/cambottomright /etc/init.d/cambottomright
 echo "Changing Ownership"
-chown pi:pi
+chown -R pi:pi /usr/share/picam
 chmod +x /usr/share/picam/*.sh
 echo "Registering Services"
 sudo update-rc.d camtopleft defaults
@@ -29,7 +29,7 @@ then
 	echo "Config File already Found."
 else
 	echo "Installing default config."
-    cp /usr/share/picam/cams-default /etc/picam.settings
+    cp /usr/share/picam/cams.default /etc/picam.settings
     nano /etc/picam.settings
 fi
 echo "Launching Upgrade Module"
