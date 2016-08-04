@@ -1,4 +1,4 @@
-topleft=rtsp://192.168.10.249:7447/575fbd6d848e5698a1533812_2
-topright=rtsp://192.168.10.249:7447/575fbd6d848e5698a1533813_2
-bottomleft=rtsp://192.168.10.249:7447/575fbd6d848e5698a1533811_2
+topleft=<rtsp_url_using_ip>
+topright=<rtsp_url_using_ip>
+bottomleft=<rtsp_url_using_ip>
 bottomright=<rtsp_url_using_ip>
