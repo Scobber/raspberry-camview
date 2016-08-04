@@ -1,3 +1,6 @@
+Information in this readme is a little out of date.
+
+
 sudo ln -s /home/pi/PiCamMatrix/init.d/camtopleft /etc/init.d/camtopleft
 sudo ln -s /home/pi/PiCamMatrix/init.d/camtopright /etc/init.d/camtopright
 sudo ln -s /home/pi/PiCamMatrix/init.d/cambottomleft /etc/init.d/cambottomleft
