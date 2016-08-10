@@ -5,7 +5,7 @@ position=bottomleft
 Script=/usr/share/picam/$position.sh
 pid_file=/var/run/cambottomleft.omx.pid
 sleep 15
-screen -dmS $position sh -c "omxplayer --win '230 600 1014 1139' --audio_queue=10  --video_queue=40 --live $(cat /etc/picam.settings | grep -o 'bottomleft.*' | cut -f2- -d'=')"
+screen -dmS $position sh -c "omxplayer --win '0 360 640 1280' --audio_queue=10  --video_queue=40 --live $(cat /etc/picam.settings | grep -o 'bottomleft.*' | cut -f2- -d'=')"
 
 ##Find PID of omxplayer.bin
 #The brackets "[ ]" around the n prevent grep from returning itself
