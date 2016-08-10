@@ -5,7 +5,7 @@ position=topright
 Script=/usr/share/picam/$position.sh
 pid_file=/var/run/camtopright.omx.pid
 sleep 10
-screen -dmS $position sh -c "omxplayer --win '1015 37 1799 599' --audio_queue=10  --video_queue=40 --live $(cat /etc/picam.settings | grep -o 'topright.*' | cut -f2- -d'=')"
+screen -dmS $position sh -c "omxplayer --win '640 0 1280 360' --audio_queue=10  --video_queue=40 --live $(cat /etc/picam.settings | grep -o 'topright.*' | cut -f2- -d'=')"
 
 ##Find PID of omxplayer.bin
 #The brackets "[ ]" around the n prevent grep from returning itself
